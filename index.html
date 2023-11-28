@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="speaker"></div>
+    <div class="powerbtn">
+      <button id="power" style="height: 20vh; background-color: rgb(2, 2, 2);"></button>
+    </div>
+    <div id="inner-container">
+      
+      <div class="camera">
+        <div class="innercam"></div>
+      </div>
+      <div id="time"></div>
+      <input id="password" type="text">
+      <small class="text-danger" id="passwordError"></small>
+      <h3 id="emergency">Emergency</h3>
+      <div id="password-btn">
+        <button onclick="display(1)" class="btn btn-tertiary">1</button>
+        <button onclick="display(2)" class="btn btn-tertiary">2</button>
+        <button onclick="display(3)" class="btn btn-tertiary">3</button>
+        <button onclick="display(4)" class="btn btn-tertiary">4</button>
+        <button onclick="display(5)" class="btn btn-tertiary">5</button>
+        <button onclick="display(6)" class="btn btn-tertiary">6</button>
+        <button onclick="display(7)" class="btn btn-tertiary">7</button>
+        <button onclick="display(8)" class="btn btn-tertiary">8</button>
+        <button onclick="display(9)" class="btn btn-tertiary">9</button>
+        <button onclick="display(0)" class="btn btn-tertiary">0</button>
+        <button onclick="display('q')" class="btn btn-tertiary">q</button>
+        <button onclick="display('w')" class="btn btn-tertiary">w</button>
+        <button onclick="display('e')" class="btn btn-tertiary">e</button>
+        <button onclick="display('r')" class="btn btn-tertiary">r</button>
+        <button onclick="display('t')" class="btn btn-tertiary">t</button>
+        <button onclick="display('y')" class="btn btn-tertiary">y</button>
+        <button onclick="display('u')" class="btn btn-tertiary">u</button>
+        <button onclick="display('i')" class="btn btn-tertiary">i</button>
+        <button onclick="display('o')" class="btn btn-tertiary">o</button>
+        <button onclick="display('p')" class="btn btn-tertiary">p</button>
+        <button onclick="display('a')" class="btn btn-tertiary">a</button>
+        <button onclick="display('s')" class="btn btn-tertiary">s</button>
+        <button onclick="display('d')" class="btn btn-tertiary">d</button>
+        <button onclick="display('f')" class="btn btn-tertiary">f</button>
+        <button onclick="display('g')" class="btn btn-tertiary">g</button>
+        <button onclick="display('h')" class="btn btn-tertiary">h</button>
+        <button onclick="display('j')" class="btn btn-tertiary">j</button>
+        <button onclick="display('k')" class="btn btn-tertiary">k</button>
+        <button onclick="display('l')" class="btn btn-tertiary">l</button>
+        <button onclick="display('z')" class="btn btn-tertiary">z</button>
+        <button onclick="display('x')" class="btn btn-tertiary">x</button>
+        <button onclick="display('c')" class="btn btn-tertiary">c</button>
+        <button onclick="display('v')" class="btn btn-tertiary">v</button>
+        <button onclick="display('b')" class="btn btn-tertiary">b</button>
+        <button onclick="display('n')" class="btn btn-tertiary">n</button>
+        <button onclick="display('m')" class="btn btn-tertiary">m</button>
+        <button onclick="display(' ')" class="btn btn-tertiary">space</button>
+        <button onclick="enter()" class="btn btn-tertiary">enter</button>
+        <button onclick="display('@')" class="btn btn-tertiary">@</button>
+        <button onclick="display('_')" class="btn btn-tertiary">_</button>
+        <button class="btn btn-danger" onclick=deleteButton()>⌫</button>
+      </div>
+
+      <div class="menu-bar">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-app"></i>
+        <i class="bi bi-caret-left"></i>
+      </div>
+
+      <div class="icon-bar">
+        <img src="./image/dial.png" alt="">
+        <img src="./image/whatsapp.png" alt="">
+        <img onclick="screenshow()" src="./image/app-icon.png" alt="">
+        <img src="./image/chrome-removebg-preview.png" alt="">
+        <img src="./image/camera-removebg-preview.png" alt="" style="margin-right: .5em;">
+      </div>
+    </div>
+    <div id="emergency-screen"></div>
+    <div id="appScreen">
+      <div class="camera">
+        <div class="innercam"></div>
+      </div>
+      <div class="apps">
+        <img src="./image/dial.png" alt="">
+        <img src="./image/whatsapp.png" alt="">
+        <img src="./image/chrome-removebg-preview.png" alt="">
+        <img src="./image/camera-removebg-preview.png">
+        <img src="./image/bible.png" alt="">
+        <img src="./image/calculator.png" alt="">
+        <img src="./image/calender.png" alt="">
+        <img src="./image/instagram.png" alt="">
+        <img src="./image/download.png" alt="">
+        <img src="./image/drives.png" alt="">
+        <img src="./image/facebook.png" alt="">
+        <img src="./image/myapp.jpeg" alt="">
+        <img src="./image/twitter.jpeg" alt="">
+        <img src="./image/youtube.png" alt="">
+        <img src="./image/candy.jpeg" alt="">
+  
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+</html>
+
+<script>
+let innerContainer = document.getElementById('inner-container')
+let passwordButtons = document.getElementById('password-btn')
+let password = document.getElementById('password')
+let emergency = document.getElementById('emergency')
+let emergencyScreen = document.getElementById('emergency-screen')
+emergencyScreen.style.display = 'none'
+let appScreen = document.getElementById('appScreen')
+appScreen.style.display = 'none'
+// let pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@_]){4,}$/
+let time = document.getElementById('time')
+let currentDate = new Date()
+let timeOptions = {
+  hour:'numeric',
+  minute:'numeric',
+  hour12:true
+}
+let formattedDateTime = currentDate.toLocaleString(undefined, timeOptions);
+time.innerHTML = `<h1>${formattedDateTime}</h1>`
+innerContainer.style.display = 'none'
+power.addEventListener('click',()=>{
+  innerContainer.style.display == 'none'
+  ?innerContainer.style.display = 'block'
+  :innerContainer.style.display = 'none'
+})
+passwordButtons.style.display = 'none'
+emergency.style.display = 'none'
+
+password.addEventListener('click', () =>{
+  passwordButtons.style.display = 'block'
+  emergency.style.display = 'block'
+})
+function display(keyPad) {
+  password.value += keyPad
+}
+
+function deleteButton() {
+  password.value = password.value.slice(0,-1)
+}
+emergency.addEventListener('click', ()=>{
+  emergencyScreen.style.display = 'block'
+  passwordButtons.style.display = 'none'
+
+})
+function screenshow() {
+  appScreen.style.display = 'block'
+}
+
+</script>
