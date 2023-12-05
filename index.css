@@ -100,7 +100,8 @@
 }
 #time{
   position: absolute;
-  left: 30%;
+  top: 20%;
+  left: 28%;
   width: 70%;
   margin: auto;
   /* font-size: 3em; */
@@ -108,8 +109,8 @@
 }
 #password{
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 40%;
+  left: 12%;
   width: 70%;
   height: 3vh;
   margin: auto;
@@ -120,15 +121,15 @@
 }
 #emergency{
   position: absolute;
-  top: 40%;
-  left: 31%;
+  top: 50%;
+  left: 33%;
   margin: auto;
   color: white;
 }
 #password-btn{
   position: absolute;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   /* left: 7%; */
   width: 100%;
   /* align-items: justify; */
@@ -142,6 +143,7 @@
   display: flex;
   gap: 5em;
   justify-content: center;
+  z-index: 1;
 }
 .icon-bar{
   position: absolute;
@@ -157,3 +159,107 @@ img{
 i{
   color: white;
 }
+/* alarm */
+#alarm-container{ 
+  position: absolute;
+  top: -3%;
+  right:2%;
+  width: 95%;
+  margin: 2em auto;
+  height: 85vh;
+  border: 1px solid;
+  border-radius: 30px;
+  background-color: rgba(53, 50, 50, 0.963);}
+
+  #clock{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: green;
+    font-size: 3em;
+  }
+  input{
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    width: 8em;
+  }
+  .control{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+  }
+  .clear-alarm{
+    background-color: red;
+    border: 0;
+  }
+  .set-alarm{
+    background-color: rgb(30, 0, 255);
+    border: 0;
+    color: #ffffff;
+  }
+  
+/* recharge card */
+#rechargedCardDiv{
+  position: absolute;
+  top: -3%;
+  right:2%;
+  overflow: auto;
+  width: 95%;
+  margin: 2em auto;
+  height: 85vh;
+  border: 1px solid;
+  border-radius: 30px;
+  background-color: rgb(201, 139, 4);
+  }
+
+  main{
+    position: absolute;
+    border: 0;
+    /* background-color: yellow; */
+    left: 13%;
+    top: 4%;
+
+  }
+  #table{
+    position: absolute;
+    border: 0;
+    top: 25%;
+  }
+
+  /* dialpad */
+  #dial-container{
+    position: absolute;
+    top: -3%;
+    right:2%;
+    width: 95%;
+    margin: 2em auto;
+    height: 85vh;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.dial-Button{
+  position: absolute;
+  bottom: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 1.5em;
+}
+#displayDial{
+  position: absolute;
+  bottom: 50%;
+  width: 99%;
+  height: 10vh;
+  background-color: transparent;
+  border: 0;
+  font-size: 2em;
+  padding: 1em;
+}
+/* button{
+  font-size: 2em;
+  border: 0;
+  background-color: transparent;
+} */
+
